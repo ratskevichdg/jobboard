@@ -12,8 +12,8 @@ class Settings():
     POSTGRES_USER : str = os.getenv("POSTGRES_USER")
     POSTGRES_PASSWORD : str = os.getenv("POSTGRES_PASSWORD")
     POSTGRES_SERVER : str = os.getenv("POSTGRES_SERVER", "localhost")
-    POSTGRES_PORT : str = os.getenv("POSTGRES_PORT", 5432)
-    POSTGRES_DB : str = os.getenv("POSTGRES_DB", "db_jobboard")
+    POSTGRES_PORT : str = os.getenv("POSTGRES_PORT", 5433)
+    POSTGRES_DB : str = os.getenv("POSTGRES_DB", "jobboard_db")
     DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
 
 settings = Settings()
