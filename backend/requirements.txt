@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+
+# Databases
+sqlalchemy
+psycopg2
+
+# for env var
+python-dotenv
